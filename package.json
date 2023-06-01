@@ -1,0 +1,49 @@
+{
+  "main": "gulpfile.js",
+  "scripts": {
+    "lint": "eslint ./",
+    "lint:fix": "eslint ./ --fix",
+    "gulp": "NODE_ENV='dev' gulp",
+    "gulp-build": "NODE_ENV='prod' gulp"
+  },
+  "author": "DreamTim",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.21.4",
+    "@babel/preset-env": "^7.21.4",
+    "babel-loader": "^9.1.2",
+    "browser-sync": "^2.29.1",
+    "del": "^6.1.1",
+    "eslint": "^8.40.0",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-config-recommended": "^4.1.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^8.0.0",
+    "gulp-babel": "^8.0.0",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-cli": "^2.3.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-if": "^3.0.0",
+    "gulp-image": "^6.3.1",
+    "gulp-inject": "^5.0.5",
+    "gulp-notify": "^4.0.0",
+    "gulp-sass": "^5.1.0",
+    "gulp-sourcemaps": "^3.0.0",
+    "gulp-svg-sprite": "^2.0.3",
+    "gulp-ttf-to-woff": "^1.0.3",
+    "gulp-ttf2woff2": "^4.0.1",
+    "gulp-uglify-es": "^3.0.0",
+    "gulp-webp": "^4.0.1",
+    "prettier": "^2.8.8",
+    "sass": "^1.62.0",
+    "webpack": "^5.85.0",
+    "webpack-stream": "^7.0.0"
+  },
+  "dependencies": {
+    "@babel/polyfill": "^7.12.1",
+    "navigo": "^8.11.1",
+    "redom": "^3.29.1"
+  }
+}
