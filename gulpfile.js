@@ -126,13 +126,13 @@ const scripts = () => {
     .pipe(webpackStream(webpackConfig), webpack)
     .pipe(
       gulpif(
-        env !== 'prod',
+        env === 'prod',
         babel({
           presets: ['@babel/env'],
         })
       )
     )
-    .pipe(gulpif(env !== 'prod', uglify().on('error', notify.onError())))
+    .pipe(gulpif(env === 'prod', uglify().on('error', notify.onError())))
     .pipe(dest('dist/js'))
     .pipe(browserSync.stream());
 };
